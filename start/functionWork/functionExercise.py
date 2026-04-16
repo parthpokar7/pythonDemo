@@ -104,10 +104,19 @@
 # pelindromeString("aba")
 
 #
-# def fact(num):
+    # def fact(num):
+    #     if num != 0:
+    #         return num * fact(num - 1)
+    #     else:
+    #         return 1
+    #
+    # print(fact(5))
+
+# def printData(myDictionary):
+#     for key, value in myDictionary.items():
+#         print(f"{key}: {value}")
 #
-#
-# print(fact(5))
+# printData({"a": 1, "b": 2, "c": 3})
 
 # def revStr(str):
 #     print(str)
@@ -129,7 +138,7 @@
 # print(primeN(4))
 
 # def findMax(myList):
-#     max = 1
+#     max = 0
 #     for i in myList:
 #         if max > i:
 #             continue
@@ -152,13 +161,13 @@
 # print(removeDup([1,1,1,2,4,3,5,6,7,6,5,4,3,2,10,5,5,5,8,6,5,5,6,7,7,7,8,2,1,3,55,64,8]))
 
 
-# def factNum(num):
-#     fact=1
-#     for i in range(1, num+1):
-#         fact *= i
+# def fact(num):
+#     factNum = 1
+#     for i in range(num,0, -1):
+#         factNum *= i
+#     return factNum
 #
-#     return fact
-# print(factNum(5))
+# print(fact(5))
 
 # def sumOfList(myList):
 #     sum = 0
@@ -177,10 +186,61 @@
 #     return myList
 # print(sortList([10,4,5,2,7,8,6,1]))
 
-def fibSeries(num):
-    fib = [0, 1]
-    for i in range(num + 1):
-        fib.append(fib[len(fib) - 1] + fib[len(fib) - 2])
-    print(fib)
+# def convertToFahrenheit(degrees):
+#     print(degrees * 9 / 5 + 32)
+#
+# convertToFahrenheit(5)
 
-fibSeries(5)
+# def fibSeries(num):
+#     fib = [0, 1]
+#     for i in range(num + 1):
+#         fib.append(fib[len(fib) - 1] + fib[len(fib) - 2])
+#     print(fib)
+#
+# fibSeries(5)
+
+
+# def secLargeNumber(num):
+#     max = 0
+#     second = 0
+#     for i in num:
+#         if i > max:
+#             second = max
+#             max = i
+#         elif i > second and i != max:
+#             second = i
+#     print(second)
+#
+#
+# secLargeNumber([1,8,2,345,52,6,5,45,65,100])
+
+
+# def countvowels(string):
+#     vowels = ['a', 'e', 'i', 'o', 'u']
+#     count = 0
+#     for ch in string:
+#         if ch in vowels:
+#             count += 1
+#     print(count)
+#
+# countvowels("hello, how are you?")
+
+# def is_anagram(string1, string2):
+#     if len(string1) != len(string2):
+#         return False
+#     else:
+#         sorted_string1 = sorted(string1)
+#         sorted_string2 = sorted(string2)
+#         print(sorted_string1 == sorted_string2)
+#
+# is_anagram("silent", "listen")
+
+# def intersection(list1, list2):
+#     result = []
+#     for item in list1:
+#         if item in list2:
+#             result.append(item)
+#             list2.remove(item)
+#     return result
+#
+# print(intersection([1,2,3,4,5,6,5,8,9,1,8,6,7], [5,6,8,9,3,4,5,6]))
