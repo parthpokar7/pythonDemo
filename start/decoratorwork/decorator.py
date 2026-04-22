@@ -196,3 +196,96 @@ create decorator for safe division
 # def main_fun(n1, n2):
 #     print(n1/n2)
 # main_fun(10,0)
+
+
+'''
+create a decorator that logs the execution of a function
+'''
+# def my_dec(fun):
+#     def wrap():
+#        print(f"executing '{fun.__name__}' function")
+#        fun()
+#     return wrap
+#
+# @my_dec
+# def main_fun():
+#     print(10 + 20)
+#
+# main_fun()
+
+# @my_dec
+# def main_fun():
+#     for i in range(1, 6):
+#         time.sleep(1)
+#         print(i)
+
+'''
+write a decorator that measure and print the execution time
+'''
+# import time
+# def my_dec(fun):
+#     def wrap():
+#         start = time.time()
+#         fun()
+#         end = time.time()
+#         print(f"{fun.__name__} took {(end - start):.2f} seconds")
+#     return wrap
+# main_fun()
+
+
+'''
+create decoratore that converts the return value of a function to uppercase
+'''
+# def my_dec(fun):
+#     def wrap():
+#         print(fun().upper())
+#     return wrap
+#
+# @my_dec
+# def main_fun():
+#     return "hello world"
+#
+# main_fun()
+
+'''
+implement a decorator that checks
+if function args are positive int
+if not print error message
+'''
+# def my_dec(fun):
+#     def wrap(*args):
+#         for i in args:
+#             if i < 0:
+#                 return "only positive values are allowed !!!"
+#         return fun(*args)
+#     return wrap
+# @my_dec
+# def main_fun(a, b):
+#     return a+b
+# print(main_fun(-4,5))
+
+'''
+create a decorator that retires execution of a function up to 3 times it it raises an exception
+'''
+# import random
+# def my_dec(fun):
+#     def wrap():
+#         for i in range(3):
+#             try:
+#                 print(f"attempt {i+1}")
+#                 return fun()
+#             except ValueError as e:
+#                 print(e)
+#         return "all attempts failed"
+#     return wrap
+#
+# @my_dec
+# def main_fun():
+#
+#     if random.random() < 0.7:
+#         raise ValueError("value is very less")
+#     return "success"
+# print(main_fun())
+
+
+
