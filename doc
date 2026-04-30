@@ -1,0 +1,81 @@
+variable
+	is used to store data
+datatype
+	is what kind of value variable is holding
+	5 types of datatypes
+	number - int, float, complex
+	bool - true false
+	dictionary - key value pair
+	sequence- tuple, list, string
+	set - {}
+
+		int - used to store the whole number without decimal(+ve, -ve)
+		float - used to store the decimal numbers
+		complex - used to store imaginary numbers
+
+		tuple - used to store multiple data of different datatypes, it is immutable (can not be changed after creation) (unordered)
+		list - used to store multiple data of different datatypes, it is mutable means we can change the data at particular index
+		string- used to store a-z values strings are immutable
+
+		set - is a collection of unique items that are unordered and do not allow duplicates, when we print the set duplicates are automatically removed(unordered)
+		dictionary - is a collection of key value pairs in which keys must be unique, values can be fetched by its key(ordered)
+operators
+	6
+	arithmetic { + - * / %) -
+	comparison {< > <= >= != ==}
+	assignment { = }
+	identity {is, is not}
+		this operator checks for the location of the variable, used to check if two variables are same object in memory or not
+	logical <and or not>
+	membership <in, not in>
+		used to check if the value is available in the collection or not
+
+conditional Statement
+	IF  - checks condition if true if blocks executes otherwise program is terminated
+	ELIF - if first condition is false, elif block executes and checks another condition if elif condition is true than elif block executes other wise jumps to next step if any
+	ELSE - if none of the condition is executes then else block executes
+loop
+	loop is used to repeat the block of code multiple times OR loop is a way to run code again and again automatically until condition becomes false
+	entry <for and while>
+	exit do while
+	for loop is used when we know how many times we want to execute the code
+	while loop is used when we are unsure how many times we want to execute the code
+
+	reduce code redundancy, saves time
+function
+	is a block of code which executes tasks and can be reusable
+	4 types of argument
+	    positional
+	    keywise
+	    length (can assign multiple values in a single arguments using *)
+	    default
+lambda
+	is a small function without name OR
+	is a reusable block of code which have single expression and can have multiple arguments
+module
+	module is a file that contains code such as class, function, variables, which we can reuse in other program or files
+	2 types
+	user define
+	built in
+	there are external modules as well which we can install
+exception handling
+	exception handling is a way to handle errors so the program doesnt crash and executes till the end
+	OR
+	exception handling is a method to detect and handle the error so that program runs smoothly without crashing
+
+	try - code which may cause error
+	except - handles error
+	else - runs if no any error occurs
+	finally - runs always no matter if error occurred or not
+file handling
+	file handling means to work with the file such as creating, updating, deleting, reading
+	saves data
+	reads data
+	updates data
+	deletes data
+python to JSON and Vice versa
+    dump() writes data in json file
+    dumps() json serialize (converts to JSON string)
+
+    load()
+    loads()
