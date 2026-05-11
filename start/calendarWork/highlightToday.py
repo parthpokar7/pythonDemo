@@ -7,8 +7,8 @@ cMonth = today.month
 cYear = today.year
 cal_output = calendar.month(cYear, cMonth)
 
-# highlighted = cal_output.replace(f" {target} ", f" \033[7m{target}\033[0m ")
-highlighted = cal_output.replace(f" {str(cDate)} ", f" [{str(cDate)}] ")
+# highlighted = cal_output.replace(f" {str(cDate)} ", f" \033[7m{str(cDate)}\033[0m ")
+highlighted = cal_output.replace(f"{str(cDate)}", f"[{str(cDate)}]")
 
 
 
